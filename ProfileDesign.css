@@ -1,0 +1,125 @@
+:root {
+    --white: #FFF4E6;
+    --gold: #AE7520;
+    --black: #232220;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-areas:
+    'header header header'
+    'main main main';
+    border-radius: 20px;
+    overflow: auto;
+    position: relative;
+    width: 67vw;
+    height: 81vh;
+    margin: 4% auto;
+    background: #fff;
+    box-shadow: -1.5vw -2vh 2.5vh rgba(255, 255, 255, 0.3), 1.5vw 2vh 2.5vh rgba(70, 70, 70, 0.15),
+    inset -1.5vw -2vh 2.5vh rgba(255, 255, 255, 0.3), inset 1.5vw 2vh 2.5vh rgba(70, 70, 70, 0.15);
+    /*box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.3), 10px 10px 15px rgba(70, 70, 70, 0.15), inset -10px -10px 15px rgba(255, 255, 255, 0.3), inset 10px 10px 15px rgba(70, 70, 70, 0.15);
+  */
+}
+
+.main {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+
+
+.header {
+    grid-area: header;
+    text-align: center;
+    font-size: 170%;
+    /*position: sticky;
+    top: 0px; */
+    max-height: 17vh;
+    margin: 3%;
+}
+
+.typingEffect {
+    /*animation*/
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: medium solid transparent; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: typing 4s steps(37, end),
+    blink-caret 0.27s step-end 4.5;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent
+    }
+    50% {
+        border-color: var(--gold);
+    }
+}
+
+form {
+    display: inline-block;
+}
+
+.checked {
+    color: var(--gold);
+}
+
+#profileImg {
+    border-radius: 17%;
+    padding: 3px;
+    margin: 3%;
+    border: 1px solid var(--gold);
+    max-width: 37%;
+}
+
+#searchIcon {
+    padding: 3px;
+    margin: 3%;
+    max-width: 17%;
+
+}
+
+#aboutMe, #rideFrom, #rideTo, #searchResults {
+    overflow: auto;
+    border-radius: 7%;
+    padding: 3px;
+    margin: 3%;
+    border: 1px solid var(--gold);
+}
+
+.info {
+    justify-content: center;
+    text-align: center;
+
+    /*width: 100%;*/
+    /*    padding: 3px;*/
+    /*margin: 3%;*/
+    /*border: 1px dashed var(--gold);*/
+}
+
+.buttonClass {
+    display: block;
+    margin: 0 auto;
+    min-width: 47%;
+    min-height: 47%;
+    border-radius: 30px;
+    color: var(--gold);
+    cursor: pointer;
+}
+
+#searchResults { border: solid var(--gold)}

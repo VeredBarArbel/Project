@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Search a Ride | TrempMate</title>
+    <link rel="stylesheet" href="ProfileDesign.css">
+</head>
+
+<body>
+
+<div class="gridContainer">
+    <header class="header">
+        <p class="typingEffect">SEARCH A RIDE</p>
+    </header>
+
+    <main class="main">
+
+        <!--Search a ride - edit the action attribute!!! -->
+        <div class="info">
+            <img id="searchIcon" src="/images/search.png" alt="search icon"> <br>
+            <form id="searchForm" action="/todo">
+                <label for="rideFrom"> From:</label> <br>
+                <input type="text" name="rideFrom" id="rideFrom" value="Choose starting point" cols="30" rows="10"> <br>
+                <label for="rideTo"> To: </label> <br>
+                <input type="text" name="rideTo" id="rideTo" value="Where do you want to go?" cols="30" rows="10"> <br>
+                <input type="submit" value="Search my ride" class="buttonClass">
+            </form>
+        </div>
+        <br>
+
+        <!--Show relevant rides - Get from DB!!!-->
+        <div class="info">
+            <h3>Get on board</h3>
+            <div id="searchResults">
+                Ride 1:<br>
+                Ride 2 <br>
+                Ride 3 <br>
+            </div>
+        </div>
+        <br>
+
+    </main>
+</div>
+</body>
+</html>
