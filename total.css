@@ -1,0 +1,161 @@
+:root {
+    --pink: #CC6666;
+    --darkPink: #CC4949;
+}
+
+* {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-areas:
+    'header header header'
+    'main main main';
+}
+
+body {
+    background-position: center;
+}
+
+.searchARide {
+    background-image: url("/images/searchARide.jpeg");
+    background-size: cover;
+}
+
+.profile {
+    background-image: url("/images/profileBackground.jpeg");
+    background-size: cover;
+}
+
+.rideDetails {
+    background-image: url("/images/rideDetails.jpeg");
+    background-size: cover;
+}
+
+header {
+    grid-area: header;
+    text-align: center;
+    font-size: 257%;
+    font-weight: bold;
+    color: var(--darkPink);
+}
+
+main {
+    grid-area: main;
+    background-position: center;
+    max-width: 30%;
+    padding-left: 35%;
+    padding-top: 3%;
+    text-align: center;
+}
+
+.feedback-input {
+    color: black;
+    font-weight: 800;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: white;
+    border: 2px solid var(--pink);
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+.info {
+    color: black;
+    font-weight: 800;
+    font-family: Helvetica, Arial, sans-serif;
+    border-radius: 5px;
+    background-color: white;
+    border: 2px solid var(--pink);
+    transition: all 0.3s;
+    width: 47%;
+    box-sizing: border-box;
+    outline: 0;
+    padding: 1%;
+    margin: 1%;
+    opacity: 80%;
+}
+
+
+[type="submit"], .buttonClass {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    width: 100%;
+    background: var(--pink);
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.3s;
+    margin-top: -4px;
+    font-weight: 700;
+    opacity: 80%;
+}
+
+[type="submit"]:hover, .buttonClass:hover {
+    background: var(--darkPink);
+}
+
+h1 {
+    font-size: 150%;
+    font-family: Helvetica, Arial, sans-serif;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+#profileImg {
+    border-radius: 17%;
+    padding: 3px;
+    margin: 3%;
+    border: 1px solid var(--gold);
+    max-width: 37%;
+}
+
+.wrap {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+form{ opacity: 80%;}
+
+.typingEffect {
+    /*animation*/
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: medium solid transparent; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: typing 4s steps(37, end),
+    blink-caret 0.27s step-end 4.5;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent
+    }
+    50% {
+        border-color: var(--pink);
+    }
+}

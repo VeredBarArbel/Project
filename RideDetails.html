@@ -6,38 +6,34 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ride Details | TrempMate</title>
-    <link rel="stylesheet" href="ProfileDesign.css">
+    <link rel="stylesheet" href="total.css">
 </head>
-<body>
+<body class="rideDetails">
 <div class="gridContainer">
 
     <!-- header -->
-    <header class="header">
-        <p class="typingEffect">RIDE DETAILS</p>
-    </header>
+    <header class="header"><p class="typingEffect">RIDE DETAILS</p></header>
 
     <!-- main -->
     <!--Show from DB!!! -->
     <main class="main">
         <img id="profileImg" src="/images/driver.jpg" alt="Driver photo"> <br>
-        <div id="rideDetailsFrom" class="info">Goes from: BGU University</div>
-        <br>
-        <div id="rideDetailsTo" class="info">Drop at: Azrialy Mall</div>
-        <br>
-        <div id="rideDetailsPrice" class="info">Price: 25 IS</div>
-        <br>
-        <div id="rideDetailsPickupTime" class="info">Meet at: 10:00 am</div>
-        <br>
+        <div class="wrap">
+            <div id="rideDetailsFrom" class="info">Goes from: BGU University</div>
+            <div id="rideDetailsTo" class="info">Drop at: TLV Mall</div>
+        </div>
+        <div class="wrap">
+            <div id="rideDetailsPrice" class="info">Price: 25 IS</div>
+            <div id="rideDetailsPickupTime" class="info">Meet at: 10:00 am</div>
+        </div>
         <div id="rideDetailsPassengers" class="info">Passengers amount: 2</div>
         <br>
+
         <!--edit onclick JS function - send request to join the ride -->
-        <div class="info">
-            <button id="saveASpot" class="buttonClass">Save me a spot!</button>
-        </div>
-        <br>
-        <div class="info">
-            <a id="backToSearch" class="buttonClass" href="SearchARide.html">&#8249; Back to search</a>
-        </div>
+        <input id="saveASpot" type="submit" value="Save me a spot!">
+        <br> <br>
+
+        <a id="backToSearch" class="buttonClass" href="SearchARide.html">&#8249; Back to search</a>
         <br>
     </main>
 

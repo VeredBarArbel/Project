@@ -6,48 +6,40 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Profile | TrempMate</title>
-    <link rel="stylesheet" href="ProfileDesign.css">
+    <link rel="stylesheet" href="total.css">
     <script src="project.js"></script>
 </head>
 
-<body>
+<body class="profile">
 <div class="gridContainer">
 
     <!-- header -->
-    <header class="header">
-        <p class="typingEffect">MY PROFILE</p>
-    </header>
+    <header class="header"><p class="typingEffect">MY PROFILE</p></header>
 
     <!-- main -->
     <main class="main">
 
-        <div class="info">
-            <!--My name - edit from DB!! -->
-            <h1 id="myName">Groot</h1>
-            <!--The user profile pic. the src need to refer the DB!! -->
-            <img id="profileImg" src="/images/grootProfile.jpg" alt="My Profile Pic"> <br>
-            <!--Edit profile pic - edit the action attribute!!! -->
-            <form id="editProfilePic" action="/todo">
-                <label for="profilePic">Update image:</label>
-                <input type="file" id="profilePic" name="profilePic" onchange=buttonVisibility("profilePicSubmit")> <br><br>
-                <input type="submit" id="profilePicSubmit" style="visibility: hidden" class="buttonClass">
-            </form>
-        </div>
+        <!--My name - edit from DB!! -->
+        <h1 id="myName">Groot</h1>
+        <!--The user profile pic. the src need to refer the DB!! -->
+        <img id="profileImg" src="/images/grootProfile.jpg" alt="My Profile Pic"> <br>
+        <!--Edit profile pic - edit the action attribute!!! -->
+        <form id="editProfilePic" action="/todo">
+            <label for="profilePic">Update image:</label>
+            <input type="file" id="profilePic" name="profilePic"
+                   onchange=buttonVisibility("profilePicSubmit") > <br><br>
+            <input type="submit" id="profilePicSubmit" style="visibility: hidden" class="buttonClass">
+        </form>
+
+        <!--About me - edit the action attribute!!! -->
+        <form action="/todo">
+            <label for="aboutMe"><h1>About Me: </h1></label>
+            <textarea name="aboutMe" id="aboutMe" class="feedback-input" placeholder="About me.."></textarea> <br>
+            <input type="submit" class="buttonClass">
+        </form>
         <br>
 
-
-        <div class="info">
-            <!--About me - edit the action attribute!!! -->
-            <form action="/todo">
-                <h3>About Me</h3>
-                <label for="aboutMe"></label>
-                <textarea name="aboutMe" id="aboutMe" cols="30" rows="10">  About me...</textarea> <br>
-                <input type="submit" class="buttonClass">
-            </form>
-        </div>
-        <br>
-
-        <div class="info">
+        <div>
             <!--Rating - calculate from DB!! -->
             <!--Add CSS: .checked{ color:orange; } -->
             <div id="rating">
