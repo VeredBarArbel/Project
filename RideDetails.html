@@ -5,23 +5,42 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ride Detail | TrempMate</title>
+    <title>Ride Details | TrempMate</title>
+    <link rel="stylesheet" href="ProfileDesign.css">
 </head>
 <body>
-    <div class="header">RIDE DETAILS</div> <br>
+<div class="gridContainer">
 
+    <!-- header -->
+    <header class="header">
+        <p class="typingEffect">RIDE DETAILS</p>
+    </header>
+
+    <!-- main -->
     <!--Show from DB!!! -->
-    <div class="main">
-        <div id="rideDetailsFrom"></div> <br>
-        <div id="rideDetailsTo"></div> <br>
-        <div id="rideDetailsPrice"></div> <br>
-        <div id="rideDetailsPickupTime"></div> <br>
-        <div id="rideDetailsPassangers"></div> <br>
-        <img src="" alt="Driver photo"> <br>
-
+    <main class="main">
+        <img id="profileImg" src="/images/driver.jpg" alt="Driver photo"> <br>
+        <div id="rideDetailsFrom" class="info">Goes from: BGU University</div>
+        <br>
+        <div id="rideDetailsTo" class="info">Drop at: Azrialy Mall</div>
+        <br>
+        <div id="rideDetailsPrice" class="info">Price: 25 IS</div>
+        <br>
+        <div id="rideDetailsPickupTime" class="info">Meet at: 10:00 am</div>
+        <br>
+        <div id="rideDetailsPassengers" class="info">Passengers amount: 2</div>
+        <br>
         <!--edit onclick JS function - send request to join the ride -->
-        <button>Save me a spot!</button>
-    </div>
+        <div class="info">
+            <button id="saveASpot" class="buttonClass">Save me a spot!</button>
+        </div>
+        <br>
+        <div class="info">
+            <a id="backToSearch" class="buttonClass" href="SearchARide.html">&#8249; Back to search</a>
+        </div>
+        <br>
+    </main>
 
+</div>
 </body>
 </html>
