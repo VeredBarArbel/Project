@@ -7,6 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Profile | TrempMate</title>
     <link rel="stylesheet" href="total.css">
+    <!-- icons css -->
+    <link rel="stylesheet"
+                      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="project.js"></script>
 </head>
 
@@ -14,13 +17,13 @@
 <div class="gridContainer">
 
         <!-- NavBar -->
-    <div class="topnav">
+    <nav class="topnav">
         <a class="active" href="#home"><i class="fa fa-home"></i> Home</a>
         <a href="UserProfile.html"><i class="fa fa-user"></i> My Profile</a>
-        <a href="SearchARide.html"><i class="fa fa-comment"></i> Join a Ride</a>
-        <a href="AddARide.html"><i class="fa fa-comment"></i> Create a Ride</a>
+        <a href="SearchARide.html"><i class="fa fa-car"></i> Join a Ride</a>
+        <a href="AddARide.html"><i class="fa fa-plus"></i> Create a Ride</a>
         <a href="contactus.html"><i class="fa fa-comment"></i> Contact Us</a>
-    </div>
+    </nav>
 
     <!-- header -->
     <header class="header"><p class="typingEffect">MY PROFILE</p></header>
@@ -33,18 +36,18 @@
         <!--The user profile pic. the src need to refer the DB!! -->
         <img id="profileImg" src="/images/grootProfile.jpg" alt="My Profile Pic"> <br>
         <!--Edit profile pic - edit the action attribute!!! -->
-        <form id="editProfilePic" action="/todo">
+        <form id="editProfilePic" action="">
             <label for="profilePic">Update image:</label>
             <input type="file" id="profilePic" name="profilePic"
                    onchange=buttonVisibility("profilePicSubmit") > <br><br>
-            <input type="submit" id="profilePicSubmit" style="visibility: hidden" class="buttonClass">
+            <input type="submit" id="profilePicSubmit" style="visibility: hidden" class="buttonClass" onclick=notification("profilePicSubmit","Looking_good!")>
         </form>
 
         <!--About me - edit the action attribute!!! -->
-        <form action="/todo">
+        <form action="">
             <label for="aboutMe"><h1>About Me: </h1></label>
             <textarea name="aboutMe" id="aboutMe" class="feedback-input" placeholder="About me.."></textarea> <br>
-            <input type="submit" class="buttonClass">
+            <input id="aboutSubmission" type="submit" class="buttonClass" onclick=notification("aboutSubmission","It's_a_new_you;)")>
         </form>
         <br>
 
@@ -53,8 +56,6 @@
             <!--Add CSS: .checked{ color:orange; } -->
             <div id="rating">
                 <h3>My Rating:</h3>
-                <link rel="stylesheet"
-                      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>

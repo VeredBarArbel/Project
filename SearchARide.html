@@ -7,6 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Search a Ride | TrempMate</title>
     <link rel="stylesheet" href="total.css">
+    <!-- icons css -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="project.js"></script>
 </head>
 
@@ -14,13 +17,13 @@
 <div class="gridContainer">
 
     <!-- NavBar -->
-    <div class="topnav">
+    <nav class="topnav">
         <a class="active" href="#home"><i class="fa fa-home"></i> Home</a>
         <a href="UserProfile.html"><i class="fa fa-user"></i> My Profile</a>
-        <a href="SearchARide.html"><i class="fa fa-comment"></i> Join a Ride</a>
-        <a href="AddARide.html"><i class="fa fa-comment"></i> Create a Ride</a>
+        <a href="SearchARide.html"><i class="fa fa-car"></i> Join a Ride</a>
+        <a href="AddARide.html"><i class="fa fa-plus"></i> Create a Ride</a>
         <a href="contactus.html"><i class="fa fa-comment"></i> Contact Us</a>
-    </div>
+    </nav>
 
     <!-- header -->
     <header class="header"><p class="typingEffect">SEARCH A RIDE</p></header>
@@ -28,20 +31,24 @@
     <!-- main -->
     <main class="main">
         <!--About me - edit the action attribute!!! -->
-        <form action="/todo">
+        <form action="">
             <label for="rideFrom"></label>
-            <input name="rideFrom" id="rideFrom" placeholder="From: Choose starting point" class="feedback-input"> <br>
+            <input type="search" name="rideFrom" id="rideFrom" placeholder="From: Choose starting point" class="feedback-input"> <br>
             <label for="rideTo"></label>
-            <input name="rideTo" id="rideTo" placeholder="To: Where do you want to go?" class="feedback-input"> <br>
+            <input type="search" name="rideTo" id="rideTo" placeholder="To: Where do you want to go?" class="feedback-input"> <br>
             <br>
-            <input type="submit" value="Search my ride">
+            <label for="search"></label>
+            <input type="button" name="search" id="search" class="buttonClass" value="Search my ride" onclick=buttonVisibility("searchResults")>
         </form>
         <br>
 
-        <form action="/todo">
-            <textarea name="searchResults" id="searchResults" placeholder="Here goes the rides results"
-                      class="feedback-input"></textarea>
-        </form>
+        <!-- Results -->
+        <div id="searchResults" class="feedback-input" style="visibility: hidden">
+            Here goes the rides results
+            <ul>
+                <il><a href="RideDetails.html">BGU-TLV Mall example</a></il>
+            </ul>
+        </div>
         <br>
 
     </main>

@@ -1,5 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
 body { 
   
   background-image: url("savana.jpg");
@@ -28,7 +32,7 @@ h1 {
   color:white;
 	font-weight: bold;
   text-align: center;
-	margin: 0;
+	margin: 30px;
   padding-top:20px;}
 
 .feedback-input {
@@ -72,3 +76,35 @@ textarea {
   font-weight:700;
 }
 [type="submit"]:hover { background:#CC4949; }
+
+/* Add a black background color to the top navigation */
+.topnav {
+  overflow: hidden;
+position: absolute;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: rgb(209, 231, 209);
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #FF4B2B;
+  color: white;
+}
+
+i {
+  color: white;
+}

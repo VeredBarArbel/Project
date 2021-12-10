@@ -1,6 +1,9 @@
 :root {
     --pink: #CC6666;
     --darkPink: #CC4949;
+    --menuWhite: #f2f2f2;
+    --menuRed: #FF4B2B;
+    --menuGreen: rgb(209, 231, 209);
 }
 
 * {
@@ -10,37 +13,24 @@
 .gridContainer {
     display: grid;
     grid-template-areas:
+    'navBar navBar navBar'
     'header header header'
     'main main main';
 }
 
 body {
     background-position: center;
-    background-image: url("/images/savana.jpg");
-    background-size: cover;
-}
-/*
-.searchARide {
-    background-image: url("/images/searchARide.jpeg");
+    background-image: url("/images/background.png");
     background-size: cover;
 }
 
-.profile {
-    background-image: url("/images/profileBackground.jpeg");
-    background-size: cover;
-}
-
-.rideDetails {
-    background-image: url("/images/rideDetails.jpeg");
-    background-size: cover;
-}
-*/
 header {
     grid-area: header;
     text-align: center;
     font-size: 257%;
     font-weight: bold;
     color: white;
+    padding-top: 2%;
 }
 
 main {
@@ -52,11 +42,19 @@ main {
     text-align: center;
 }
 
+.feedback-input a {
+    color: var(--pink);
+}
+
+.feedback-input a:hover {
+    color: var(--darkPink);
+}
+
 .feedback-input {
     color: black;
     font-weight: 800;
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 18px;
+    font-size: 1.4vw;
     border-radius: 5px;
     line-height: 22px;
     background-color: white;
@@ -67,12 +65,14 @@ main {
     width: 100%;
     box-sizing: border-box;
     outline: 0;
+    opacity: 80%;
 }
 
 .info {
     color: black;
     font-weight: 800;
     font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.4vw;
     border-radius: 5px;
     background-color: white;
     border: 2px solid var(--pink);
@@ -94,7 +94,7 @@ main {
     border: 0;
     cursor: pointer;
     color: white;
-    font-size: 24px;
+    font-size: 1.4vw;
     padding-top: 10px;
     padding-bottom: 10px;
     transition: all 0.3s;
@@ -133,6 +133,10 @@ form {
     opacity: 80%;
 }
 
+.checked {
+    color: var(--pink);
+}
+
 .typingEffect {
     /*animation*/
     overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -164,3 +168,39 @@ form {
     }
 }
 
+.topnav {
+    grid-area: navBar;
+    overflow: hidden;
+	padding-top: 2%;
+  }
+
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: var(--menuWhite);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: var(--menuGreen);
+    color: black;
+  }
+
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: var(--menuRed);
+    color: white;
+  }
+
+  /* ride details map */
+#map_box{
+    border-color: var(--pink);
+    border-width: 1vh;
+    border-radius: 5%;
+    width: 60vh;
+    height:55vh;
+}
