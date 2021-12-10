@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
 :root {
     --pink: #CC6666;
     --darkPink: #CC4949;
@@ -7,7 +9,7 @@
 }
 
 * {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .gridContainer {
@@ -15,7 +17,8 @@
     grid-template-areas:
     'navBar navBar navBar'
     'header header header'
-    'main main main';
+    'main main main'
+    'footer footer footer';
 }
 
 body {
@@ -25,6 +28,7 @@ body {
 }
 
 header {
+    font-family: 'Montserrat', sans-serif;
     grid-area: header;
     text-align: center;
     font-size: 257%;
@@ -42,6 +46,19 @@ main {
     text-align: center;
 }
 
+footer {
+    grid-area: footer;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footerLable {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
 .feedback-input a {
     color: var(--pink);
 }
@@ -53,7 +70,6 @@ main {
 .feedback-input {
     color: black;
     font-weight: 800;
-    font-family: Helvetica, Arial, sans-serif;
     font-size: 1.4vw;
     border-radius: 5px;
     line-height: 22px;
@@ -65,13 +81,11 @@ main {
     width: 100%;
     box-sizing: border-box;
     outline: 0;
-    opacity: 80%;
 }
 
 .info {
     color: black;
     font-weight: 800;
-    font-family: Helvetica, Arial, sans-serif;
     font-size: 1.4vw;
     border-radius: 5px;
     background-color: white;
@@ -82,14 +96,12 @@ main {
     outline: 0;
     padding: 1%;
     margin: 1%;
-    opacity: 80%;
 }
 
 
 [type="submit"], .buttonClass {
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     width: 100%;
-    background: var(--pink);
+    background: var(--menuRed);
     border-radius: 5px;
     border: 0;
     cursor: pointer;
@@ -100,17 +112,16 @@ main {
     transition: all 0.3s;
     margin-top: -4px;
     font-weight: 700;
-    opacity: 80%;
 }
 
 [type="submit"]:hover, .buttonClass:hover {
-    background: var(--darkPink);
+    background: var(--menuGreen);
 }
 
 h1 {
     font-size: 150%;
-    font-family: Helvetica, Arial, sans-serif;
-    color: black;
+    color: white;
+    text-shadow: var(--menuRed);
     font-weight: bold;
     text-align: center;
     margin: 0;
@@ -129,12 +140,12 @@ h1 {
     flex-flow: row wrap;
 }
 
-form {
-    opacity: 80%;
-}
+/*form {*/
+/*    opacity: 80%;*/
+/*}*/
 
 .checked {
-    color: var(--pink);
+    color: var(--menuRed);
 }
 
 .typingEffect {
@@ -171,36 +182,35 @@ form {
 .topnav {
     grid-area: navBar;
     overflow: hidden;
-	padding-top: 2%;
-  }
+}
 
-  /* Style the links inside the navigation bar */
-  .topnav a {
+/* Style the links inside the navigation bar */
+.topnav a {
     float: left;
     color: var(--menuWhite);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-  }
+}
 
-  /* Change the color of links on hover */
-  .topnav a:hover {
+/* Change the color of links on hover */
+.topnav a:hover {
     background-color: var(--menuGreen);
     color: black;
-  }
+}
 
-  /* Add a color to the active/current link */
-  .topnav a.active {
+/* Add a color to the active/current link */
+.topnav a.active {
     background-color: var(--menuRed);
     color: white;
-  }
+}
 
-  /* ride details map */
-#map_box{
+/* ride details map */
+#map_box {
     border-color: var(--pink);
     border-width: 1vh;
     border-radius: 5%;
     width: 60vh;
-    height:55vh;
+    height: 55vh;
 }
