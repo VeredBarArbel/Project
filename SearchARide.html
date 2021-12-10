@@ -13,27 +13,39 @@
 <body class="searchARide">
 <div class="gridContainer">
 
+    <!-- NavBar -->
+    <div class="topnav">
+        <a class="active" href="#home"><i class="fa fa-home"></i> Home</a>
+        <a href="UserProfile.html"><i class="fa fa-user"></i> My Profile</a>
+        <a href="SearchARide.html"><i class="fa fa-comment"></i> Join a Ride</a>
+        <a href="AddARide.html"><i class="fa fa-comment"></i> Create a Ride</a>
+        <a href="contactus.html"><i class="fa fa-comment"></i> Contact Us</a>
+    </div>
+
     <!-- header -->
     <header class="header"><p class="typingEffect">SEARCH A RIDE</p></header>
 
     <!-- main -->
     <main class="main">
-            <!--About me - edit the action attribute!!! -->
-            <form action="/todo">
-                <label for="rideFrom"></label>
-                <input name="rideFrom" id="rideFrom" placeholder="From: Choose starting point" class="feedback-input"> <br>
-                <label for="rideTo"></label>
-                <input name="rideTo" id="rideTo" placeholder="To: Where do you want to go?" class="feedback-input"> <br> <br>
-                <input type="submit" value="Search my ride">
-            </form>
+        <!--About me - edit the action attribute!!! -->
+        <form action="/todo">
+            <label for="rideFrom"></label>
+            <input name="rideFrom" id="rideFrom" placeholder="From: Choose starting point" class="feedback-input"> <br>
+            <label for="rideTo"></label>
+            <input name="rideTo" id="rideTo" placeholder="To: Where do you want to go?" class="feedback-input"> <br>
+            <br>
+            <input type="submit" value="Search my ride">
+        </form>
         <br>
 
         <form action="/todo">
-            <textarea name="searchResults" id="searchResults" placeholder="Here goes the rides results" class="feedback-input"></textarea>
+            <textarea name="searchResults" id="searchResults" placeholder="Here goes the rides results"
+                      class="feedback-input"></textarea>
         </form>
         <br>
 
     </main>
+
 </div>
 </body>
 </html>
