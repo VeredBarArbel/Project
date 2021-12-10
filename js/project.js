@@ -3,5 +3,5 @@ function buttonVisibility(buttonID) {
 }
 
 function notification(elementId, message) {
-   alert(message);
+    alert(message);
 }

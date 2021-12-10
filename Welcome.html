@@ -1,64 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<link rel="stylesheet" href="css/Welcome.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/Welcome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TeampMate | Welcome!</title>
 </head>
 <body>
-	<div class="container" id="container">
-		<div class="form-container sign-up-container">
-			<form action="#">
-				<h1>Create Account</h1>
-				<div class="social-container">
-					<a href="https://www.facebook.com/" class="social" target="blank"><i class="fa fa-facebook" ></i></a>
-					<a href="https://myaccount.google.com/?utm_source=sign_in_no_continue" class="social" target="blank"><i class="fa fa-google-plus"></i></a>
-					<a href="https://www.linkedin.com/feed/" class="social" target="blank"><i class="fa fa-linkedin"></i></a>
-				</div>
-				<span>Prefere using your email for registration?</span>
-				<input type="text" placeholder="Name" />
-				<input id="Gmail" onblur="checkEmail('Gmail')" type="email" placeholder="Email" />
-				<input type="password" placeholder="Password" />
-				<div class="inline-container">
-					<label for="remember">Remember me</label>
-					<input type="checkbox" checked="checked" name="remember"/>
-				</div><br>
-				<button><a href="LandingPage.html">Sign Up</a></button>
-			</form>
-		</div>
-		<div class="form-container sign-in-container">
-			<form action="#" >
-				<h1>Sign in</h1>
-				<div class="social-container">
-					<a href="https://www.facebook.com/" class="social" target="blank"><i class="fa fa-facebook" ></i></a>
-					<a href="https://myaccount.google.com/?utm_source=sign_in_no_continue" class="social" target="blank"><i class="fa fa-google-plus"></i></a>
-					<a href="https://www.linkedin.com/feed/" class="social" target="blank"><i class="fa fa-linkedin"></i></a>
-				</div>
-				<span>or use your account</span>
-				<input id="email" onblur="checkEmail('email')" type="email" placeholder="Email" />
-				<input type="password" placeholder="Password" />
-				<a href="#" id="pass">Forgot your password?</a>
-				<button id="signToHome"><a href="LandingPage.html">Sign In</a></button>
-			</form>
-		</div>
-		<div class="overlay-container">
-			<div class="overlay">
-				<div class="overlay-panel overlay-left">
-					<h1>Welcome Back, TrempMate!</h1>
-					<p>Where are we going today?</p>
-					<button class="ghost" id="signIn">Sign In</button>
-				</div>
-				<div class="overlay-panel overlay-right">
-					<h1>Not A Member Yet?<br> Ride With Us!</h1>
-					<p>Enter your personal details so we can start our journey together</p>
-					<button class="ghost" id="signUp">Sign Up</button>
-				</div>
-			</div>
-		</div>
-	</div>
-	<script src="js/Welcome.js"></script>
+<div class="container" id="container">
+    <div class="form-container sign-up-container">
+        <form action="#">
+            <h1>Create Account</h1>
+            <div class="social-container">
+                <a href="https://www.facebook.com/" class="social" target="blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://myaccount.google.com/?utm_source=sign_in_no_continue" class="social" target="blank"><i
+                        class="fa fa-google-plus"></i></a>
+                <a href="https://www.linkedin.com/feed/" class="social" target="blank"><i
+                        class="fa fa-linkedin"></i></a>
+            </div>
+            <span>Prefere using your email for registration?</span>
+            <input type="text" placeholder="Name"/>
+            <input id="Gmail" onblur="checkEmail('Gmail')" type="email" placeholder="Email"/>
+            <input type="password" placeholder="Password"/>
+            <div class="inline-container">
+                <label for="remember">Remember me</label>
+                <input type="checkbox" checked="checked" name="remember"/>
+            </div>
+            <br>
+            <button><a href="LandingPage.html">Sign Up</a></button>
+        </form>
+    </div>
+    <div class="form-container sign-in-container">
+        <form action="#">
+            <h1>Sign in</h1>
+            <div class="social-container">
+                <a href="https://www.facebook.com/" class="social" target="blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://myaccount.google.com/?utm_source=sign_in_no_continue" class="social" target="blank"><i
+                        class="fa fa-google-plus"></i></a>
+                <a href="https://www.linkedin.com/feed/" class="social" target="blank"><i
+                        class="fa fa-linkedin"></i></a>
+            </div>
+            <span>or use your account</span>
+            <input id="email" onblur="checkEmail('email')" type="email" placeholder="Email"/>
+            <input type="password" placeholder="Password"/>
+            <a href="#" id="pass">Forgot your password?</a>
+            <button id="signToHome"><a href="LandingPage.html">Sign In</a></button>
+        </form>
+    </div>
+    <div class="overlay-container">
+        <div class="overlay">
+            <div class="overlay-panel overlay-left">
+                <h1>Welcome Back, TrempMate!</h1>
+                <p>Where are we going today?</p>
+                <button class="ghost" id="signIn">Sign In</button>
+            </div>
+            <div class="overlay-panel overlay-right">
+                <h1>Not A Member Yet?<br> Ride With Us!</h1>
+                <p>Enter your personal details so we can start our journey together</p>
+                <button class="ghost" id="signUp">Sign Up</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/Welcome.js"></script>
 </body>
 </html>
